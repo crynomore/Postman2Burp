@@ -32,11 +32,3 @@ Replace path_to_your_postman_collection.json and path_to_your_postman_environmen
 
 If no environment file is provided, the script runs without it.
 Ensure all necessary variables (baseUrl, etc.) are defined in your environment file for proper request handling.
-
-# Script Details
-The script includes the following functions:
-
-- load_postman_collection(file_path): Loads the Postman collection from the specified file.
-- load_postman_environment(file_path): Loads the Postman environment from the specified file.
-- resolve_variables(data, environment): Resolves variables in the request URL, headers, and body using the provided environment.
-send_to_burp_repeater(request_data, burp_host, burp_port): Sends the resolved request to the Burp Suite Repeater.
