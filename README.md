@@ -7,22 +7,31 @@ This script allows you to import Postman API collections into Burp Suite, send t
 - Resolve Variables: Replaces variables in the request URL, headers, and body with actual values from the environment.
 - Send Requests to Burp Suite Repeater: Uses Burp Suite's API to send the resolved requests to the Repeater.
 
-# Requirements
-- Python 3
-- requests library
-
 # Installation
 - Clone the repository
 - `pip install requests`
 
-# Usage
-Prepare your Postman collection and environment JSON files.
+## Usage
 
-- collection_file: Path to your Postman collection file (e.g., path_to_postman_collection.json).
-- environment_file: Path to your Postman environment file (e.g., path_to_postman_environment.json).
+### Prerequisites
+- Python 3.x installed.
+- Required Python packages installed (`requests`, `argparse`).
 
-# Run the script:
-- `python script_name.py`
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/crynomore/postman2burp
+2. Navigate to the project directory
+### Running the Script
+To send requests from a Postman collection:
+```bash
+python main.py path_to_your_postman_collection.json [--environment path_to_your_postman_environment.json]
+```
+
+Replace path_to_your_postman_collection.json and path_to_your_postman_environment.json with the actual paths to your Postman collection and optional environment file.
+
+If no environment file is provided, the script runs without it.
+Ensure all necessary variables (baseUrl, etc.) are defined in your environment file for proper request handling.
 
 # Script Details
 The script includes the following functions:
