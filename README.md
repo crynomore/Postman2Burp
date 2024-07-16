@@ -1,11 +1,11 @@
 # Postman2Burp
-This script allows you to import Postman API collections into Burp Suite, send the requests to the Repeater, and handle variable resolution.
+This script allows you to import Postman API collections into Burp Suite, send the requests to the Proxy, and handle variable resolution.
 
 # Features
 - Load Postman Collection: Reads a Postman collection JSON file.
 - Load Postman Environment: Reads a Postman environment JSON file.
 - Resolve Variables: Replaces variables in the request URL, headers, and body with actual values from the environment.
-- Send Requests to Burp Suite Repeater: Uses Burp Suite's API to send the resolved requests to the Repeater.
+- Send Requests to Burp Suite Proxy: Uses Burp Suite's API to send the resolved requests to the proxy/HTTP History.
 
 # Installation
 - Clone the repository
